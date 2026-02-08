@@ -68,7 +68,7 @@ function callback(response2){
     //added tasks
     
     //create map element
-    map = L.map('map').setView([44.06, -121.31], 6);
+    map = L.map('map').setView([44.06, -121.31], 4);
     //add tile layer
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
