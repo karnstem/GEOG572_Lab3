@@ -21,6 +21,7 @@ h1{
     color: #555;
 }
 .legend i {
+    display: inline-block;
     width: 18px;
     height: 18px;
     float: left;
