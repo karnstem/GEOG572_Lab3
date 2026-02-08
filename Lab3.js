@@ -2,7 +2,7 @@
 
 function jsAjax(){
     //use Fetch to retrieve data
-    fetch('USA_Major_Cities.geojson')
+    fetch('USA_Major_Cities.json')
         .then(conversion) //convert data to usable form
         .then(callback) //send retrieved data to a callback function
 };
