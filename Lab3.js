@@ -228,7 +228,7 @@ function callback2(response2){
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-        labels = [];
+        labels = ['0-10 people per square mile', '10-20 people per square mile','20-50 people per square mile','50-100 people per square mile','100-200 people per square mile','20o-500 people per square mile','500-1000 people per square mile','Over 1000 people per square mile'];
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
