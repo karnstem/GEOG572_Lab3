@@ -63,7 +63,7 @@ function calcPropRadius(attValue) {
     //constant factor adjusts symbol sizes evenly
     var minRadius = 5;
     //Flannery Apperance Compensation formula
-    var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius /3;
+    var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius /4;
 
     return radius;
 };
@@ -75,7 +75,7 @@ function callback(response2){
     //added tasks
     
     //create map element
-    map = L.map('map').setView([44.06, -121.31], 5);
+    map = L.map('map').setView([37.8, -96], 4);
     //add tile layer
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -159,7 +159,7 @@ function callback2(response2){
     //tasks using the data go here
     console.log(response2);
     //create map element
-    map = L.map('map2').setView([37.8, -96], 4);
+    map2 = L.map('map2').setView([37.8, -96], 4);
     //add tile layer
     var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
