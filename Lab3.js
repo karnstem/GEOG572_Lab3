@@ -68,7 +68,7 @@ function callback(response2){
     //added tasks
     
     //create map element
-    map = L.map('map').setView([44.06, -121.31], 4);
+    map = L.map('map').setView([44.06, -121.31], 5);
     //add tile layer
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -90,7 +90,7 @@ function callback(response2){
             pointToLayer: function (feature,latlng) {
                 var attValue = Number(feature.properties[attribute]);
                 var geojsonMarkerOptions = {
-                    radius: calcPropRadius(attValue),
+                    radius: (calcPropRadius(attValue)/3000),
                     fillColor: "#00ff33",
                     color: "#000",
                     weight: 1,
