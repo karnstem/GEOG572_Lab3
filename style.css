@@ -20,7 +20,7 @@ h1{
     line-height: 18px;
     color: #555;
 }
-.legend i {
+.info.legend i {
     display: inline-block;
     width: 18px;
     height: 18px;
