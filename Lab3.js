@@ -227,14 +227,14 @@ function callback2(response2){
     legend.onAdd = function (map2) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-        labels = ['0-10 people per square mile', '10-20 people per square mile','20-50 people per square mile','50-100 people per square mile','100-200 people per square mile','20o-500 people per square mile','500-1000 people per square mile','Over 1000 people per square mile'];
+        grades = [0, 10, 20, 50, 100, 200, 500, 1000];
+        //labels = ['0-10 people per square mile', '10-20 people per square mile','20-50 people per square mile','50-100 people per square mile','100-200 people per square mile','20o-500 people per square mile','500-1000 people per square mile','Over 1000 people per square mile'];
 
     // loop through our density intervals and generate a label with a colored square for each interval
-    for (var i = 0; i < grades.length; i++) {
+    for var (i = 0; i < grades.length; i++) {
         div.innerHTML +=
             '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            labels[i] + '<br>';
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
     }
 
     return div;
